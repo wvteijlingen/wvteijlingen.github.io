@@ -93,25 +93,26 @@ a:hover {
   vertical-align: middle;
 }
 #intro .photo {
-  background: url("../images/photo.png") no-repeat top center;
-  -webkit-background-size: 145px 145px;
-  -moz-background-size: 145px 145px;
-  background-size: 145px 145px;
+  background: url("../images/photo.jpg") no-repeat center center;
+  -webkit-background-size: 150px 150px;
+  -moz-background-size: 150px 150px;
+  background-size: 150px 150px;
   width: 145px;
   height: 145px;
   margin: 0 auto 40px auto;
+  border-radius: 72px;
 }
 @media (max-height: 700px) {
   #intro .photo {
     margin-bottom: 15px;
   }
 }
-#intro .photo:hover {
+/* #intro .photo:hover {
   background: url("../images/photo-2.png") no-repeat top center;
   -webkit-background-size: 145px 145px;
   -moz-background-size: 145px 145px;
   background-size: 145px 145px;
-}
+} */
 /* Contact buttons */
 /* ---------------------------------- */
 .links {
