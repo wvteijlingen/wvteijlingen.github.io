@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  font-size: 28px;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
   margin: 0;
   font-family: AvenirNext-DemiBold, sans-serif;
   font-weight: 600;
-  font-size: 28px;
   background-color: #ff4b33;
   color: white;
 }
@@ -40,6 +40,7 @@ h1 span {
 
 .ward {
   width: 400px;
+  max-width: 80vw;
   height: 87px;
   margin: 0 auto 70px auto;
   background-image: url('../images/ward.svg');
@@ -69,5 +70,25 @@ a:hover {
 }
 
 .links a + a {
-  margin-left: 30px;
+  margin: 0 0 0 30px;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 20px;
+  }
+
+  .links a {
+    font-size: 0.8rem;
+  }
+
+  .links a + a {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .links {
+    margin-top: 80px;
+  }
 }
