@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   padding: 20px;
   margin: 0;
-  font-family: AvenirNext-DemiBold, sans-serif;
+  font-family: AvenirNext-DemiBold, Helvetica, sans-serif;
   font-weight: 600;
   background-color: #ff4b33;
   color: white;
@@ -30,19 +30,23 @@ body {
   border: 2px solid white;
 }
 
-h1 span {
-  display: none;
+header {
+  margin: 0;
+}
+
+h1 {
+  margin: 0 0 50px 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #FFF008;
 }
 
 .ward {
   width: 200px;
-  max-width: 80vw;
-  height: 44px;
-  margin: 0 0 70px 0;
-  background-image: url('../images/ward.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+h1 span {
+  /* display: none; */
 }
 
 a {
@@ -72,6 +76,10 @@ a:hover {
 @media (max-width: 600px) {
   html {
     font-size: 20px;
+  }
+
+  .ward {
+    width: 120px;
   }
 
   .links a {
