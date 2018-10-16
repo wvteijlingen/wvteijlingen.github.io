@@ -7,11 +7,10 @@ html {
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   box-sizing: border-box;
   padding: 20px;
-  margin: 0;
+  margin: 0 10vw;
   font-family: AvenirNext-DemiBold, Helvetica, sans-serif;
   font-weight: 600;
   background-color: #ff4b33;
