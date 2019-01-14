@@ -14,7 +14,7 @@ body {
   color: white;
 }
 
-.summary + .summary::before {
+.summary::before {
   content: '';
   display: block;
   width: 30px;
@@ -161,10 +161,6 @@ p {
 
   .ward {
     width: 120px;
-  }
-
-  .links a {
-    font-size: 0.8rem;
   }
 
   .links a + a {
