@@ -39,19 +39,19 @@ h1 {
   margin: 0;
   font-weight: 700;
   font-size: 1.75rem;
-  color: #FFF008;
+  color: rgb(255, 214, 44);
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
-  border-bottom: 0px solid #FFF008;
+  border-bottom: 0px solid rgb(255, 214, 44);
   padding-bottom: 0.2em;
   transition: border-bottom-width 0.15s linear;
 }
 
 p a {
-  color: #FFF008;
+  color: rgb(255, 214, 44);
 }
 
 a:hover {
@@ -148,7 +148,7 @@ p {
 } */
 
 .portfolio-item .links a {
-  color: #FFF008;
+  color: rgb(255, 214, 44);
 }
 
 
