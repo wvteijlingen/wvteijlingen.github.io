@@ -1,74 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+:root {
+  --tint-color: #584dff;
+  --font-serif: "Source Serif Pro", serif;
+  --font-sans-serif: system-ui, -apple-system, sans-serif;
+}
+
 html {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 body {
   padding: 15vh 10vw 10vw 10vw;
-  /* margin: 0 10vw; */
   max-width: 750px;
-  font-family: -apple-system, system-ui, Helvetica, sans-serif;
-  /* font-weight: 600; */
-  background-color: #D23F3F;
-  color: white;
+  font-family: var(--font-serif);
+  background-color: #f5f4f1;
+  color: #030911;
+  /* -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1); */
 }
 
-.summary::before {
+body {
+  /* animation: appear 1s 0.3s forwards;
+  opacity: 0; */
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* .summary::before {
   content: '';
   display: block;
-  width: 30px;
+  width: 40px;
   height: 3px;
   margin: 0 0 60px 0;
-  background: rgba(255, 255, 255, 0.5);
-}
+  background: currentColor;
+  opacity: 0.2;
+} */
+
+/* section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+} */
 
 section + section {
   margin-top: 60px;
 }
 
-.introduction {
-  font-size: 1.1rem;
-  font-weight: 600;
+.page-intro {
+  margin-bottom: 100px;
 }
 
 
 /* Typography */
 
-h1 {
+h1, h2, p {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+p {
   margin: 0;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+}
+
+p + p {
+  margin: 20px 0;
+}
+
+.site-header {
+  margin: 0 0 20px 0;
+  font-family: var(--font-sans-serif);
+  font-size: 1rem;
+  letter-spacing: 1.5px;
   font-weight: 700;
-  font-size: 1.75rem;
-  color: rgb(255, 214, 44);
+  text-transform: uppercase;
+  /* color: var(--tint-color); */
+  opacity: 0.5;
+}
+
+.section-header {
+  margin: 0 0 20px 0;
+  font-family: var(--font-sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
+.section-intro {
+  margin: 0 0 20px 0;
+  line-height: 1.65;
+  font-size: 1.529rem;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
-  border-bottom: 0px solid rgb(255, 214, 44);
-  padding-bottom: 0.2em;
+  border-bottom: 0px solid currentColor;
+  /* padding-bottom: 0.2em; */
   transition: border-bottom-width 0.15s linear;
 }
 
-p a {
-  color: rgb(255, 214, 44);
+a {
+  color: var(--tint-color);
 }
 
 a:hover {
   border-bottom-width: 0.25em;
 }
 
-p {
-  margin: 20px 0;
-  line-height: 1.45;
-}
-
 .links {
+  font-size: 1rem;
   margin-top: 60px;
 }
 
 .links a {
-  color: white;
+  color: inherit;
 }
 
 .links a + a {
@@ -78,25 +138,22 @@ p {
 
 /* Summaries */
 
-.summary header {
+.summary .section-header {
   margin-bottom: 30px;
-  opacity: 0.5;
-  font-weight: 600;
 }
 
 .summary article h1 {
-  color: white;
   margin: 0;
   font-size: 1rem;
   font-weight: normal;
 }
 
 .summary article h2 {
-  color: white;
   margin: 5px 0 0 0;
+  font-family: var(--font-sans-serif);
   font-size: 0.75rem;
-  opacity: 0.5;
-  font-weight: normal;
+  /* opacity: 0.5; */
+  /* font-weight: 700; */
 }
 
 .summary article {
@@ -116,10 +173,11 @@ p {
 .portfolio-item + .portfolio-item::before {
   content: '';
   display: block;
-  width: 30px;
+  width: 40px;
   height: 3px;
   margin: 0 0 60px 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: currentColor;
+  opacity: 0.2;
 }
 
 .portfolio-item img {
@@ -148,7 +206,7 @@ p {
 } */
 
 .portfolio-item .links a {
-  color: rgb(255, 214, 44);
+  color: var(--tint-color);
 }
 
 
