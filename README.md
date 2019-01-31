@@ -1,6 +1,6 @@
 # Ward van Teijlingen
 
-## Developer with over 8 years experience building for web and mobile.
+I am a developer with over 8 years experience building for web and mobile.
 
 Apart from programming, my experience contains running a business, communicating with clients, collaborating on design, and seeing projects through from ideas to concept, to prototypes, to release. My passion lies in building great mobile apps.
 
