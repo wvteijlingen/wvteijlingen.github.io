@@ -254,3 +254,10 @@ article {
     margin-top: 80px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #090909;
+    color: #f5f4f1;
+  }
+}
