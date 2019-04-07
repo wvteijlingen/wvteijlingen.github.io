@@ -259,6 +259,10 @@ article {
 /* Dark theme */
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --tint-color: #6f8add;
+  }
+  
   body {
     background-color: #2c2a28;
     color: #f5f4f1;
