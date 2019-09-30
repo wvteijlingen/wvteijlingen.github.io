@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  margin: 0;
   padding: 12vh 10vw 10vw 10vw;
   max-width: 750px;
   font-family: var(--font-sans-serif);
