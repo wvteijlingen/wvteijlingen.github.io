@@ -5,7 +5,153 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		<meta name="description" content="Ward van Teijlingen">
-		<link rel="stylesheet" href="css/main.css">
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+			:root {
+			  --tint-color: #584dff;
+			  --font-sans-serif: -apple-system, "Lato", sans-serif;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  font-size: 17px;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 12vh 10vw 10vw 10vw;
+			  max-width: 750px;
+			  font-family: var(--font-sans-serif);
+			  color: #030911;
+			}
+
+			.appear {
+			  animation: appear 1s .3s forwards;
+			  opacity: 0;
+			}
+
+			@keyframes appear {
+			  0% {
+			    transform: translateY(20px);
+			    opacity: 0;
+			  }
+
+			  100% {
+			    transform: none;
+			    opacity: 1;
+			  }
+			}
+
+			section + section {
+			  margin-top: 60px;
+			}
+
+			.page-intro {
+			  margin-bottom: 100px;
+			}
+
+			h1, h2, p {
+			  font-weight: 600;
+			  font-size: inherit;
+			  line-height: 150%;
+			}
+
+			p {
+			  margin: 0;
+			  line-height: 1.8;
+			  -webkit-font-smoothing: antialiased;
+			  -webkit-text-stroke: .45px rgba(0, 0, 0, .1);
+			}
+
+			p+p {
+			  margin: 20px 0;
+			}
+
+			.site-header {
+			  margin: 0 0 20px 0;
+			  font-size: 1rem;
+			  opacity: .5;
+			}
+
+			.section-header {
+			  margin: 0 0 10px 0;
+			  font-size: .8rem;
+			  font-weight: 700;
+			  letter-spacing: .25px;
+			}
+
+			.section-intro {
+			  margin: 0 0 40px 0;
+			  line-height: 1.65;
+			  font-size: 1.65rem;
+			}
+
+			a {
+			  color: var(--tint-color);
+			  text-decoration: inherit;
+			}
+
+			a:hover {
+			  text-decoration: underline;
+			}
+
+			header a {
+			  border-bottom: 0 solid currentColor;
+			  padding-bottom: .1em;
+			  transition: border-bottom-width .15s linear;
+			}
+
+			header a:hover {
+			  text-decoration: none;
+			  border-bottom-width: .2em;
+			}
+
+			.links {
+			  margin-top: 80px;
+			  opacity: .5;
+			}
+
+			.links a {
+			  color: inherit;
+			}
+
+			.links a + a {
+			  margin: 0 0 0 30px;
+			}
+
+			@media (max-width:600px) {
+			  html {
+			    font-size: 15px;
+			  }
+
+			  .links a + a {
+			    margin: 0 0 0 20px;
+			  }
+			}
+
+			@media (max-height:600px) {
+			  body {
+			    padding-top: 8vh;
+			  }
+
+			  .links {
+			    margin-top: 80px;
+			  }
+			}
+
+			@media (prefers-color-scheme:dark) {
+			  :root {
+			    --tint-color: #6f8add;
+			  }
+
+			  body {
+			    background-color: #1e1e1e;
+			    color: #f5f4f1;
+			  }
+			}
+		</style>
 	</head>
 	<body class="appear">
 		<header class="page-intro">
