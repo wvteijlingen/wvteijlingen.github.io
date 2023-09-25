@@ -1,1 +1,0 @@
-# Ward van Teijlingen
