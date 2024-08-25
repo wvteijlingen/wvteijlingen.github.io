@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Open in Archive.org</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta name="description" content="Open in Archive.org">
+</head>
+
+<body>
+	<script>
+		async function run(page) {
+			const existing = await (fetch(`https://archive.org/wayback/available?url=${page}`).then(e => e.json()));
+			const existingURL = existing?.archived_snapshots?.closest?.url;
+
+			if (existingURL) {
+				document.write("Already archived. Redirecting...")
+				window.location.replace(existingURL);
+				return;
+			}
+
+			document.write("Archiving...")
+
+			const makeURL = `https://web.archive.org/save/${page}`;
+			window.location.replace(makeURL);
+			return
+		}
+
+		const url = new URL(window.location);
+		const page = url.searchParams.get("page");
+
+		if (page) {
+			document.write(`Loading ${page}`)
+			run(page)
+		} else {
+			document.write("No page provided")
+		}
+	</script>
+</body>
+
+</html>
